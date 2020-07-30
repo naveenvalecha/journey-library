@@ -191,6 +191,7 @@ class App extends Component {
                     baseurl={this.props.baseurl}
                     optiontemplate={this.props.optiontemplate}
                     bodytemplate={this.props.bodytemplate}
+                    buttonclasses={this.props.buttonclasses}
                     listwrapper={this.props.listwrapper}
                     bodywrapper={this.props.bodywrapper}
                     itemwrapper={this.props.itemwrapper}

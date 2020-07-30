@@ -204,26 +204,21 @@ class Panel extends Component {
         console.log(this.props.listtype)
         console.log(this.props.listwrapper)
 
-        let ListType =  `${this.props.listtype}`;
+        let ListType = `${this.props.listtype}`;
 
 
         return (
-            <ListType className={'journey au-grid'}>
+            <ListType className={'journey'}>
                 {body}
-                {/*<div className={'answer journey__options erd-list--stack-detail list-layout--4-4-4'}*/}
-                {/*     key={this.state.q.name}>*/}
-
-                    <ListType className={'list ' + this.props.listwrapper} role="list">
-                        {as}
-                    </ListType>
-                {/*</div>*/}
+                <ListType className={'list ' + this.props.listwrapper} role="list">
+                    {as}
+                </ListType>
                 <div className="journey__navs">
-
                     {this.state.step > 0 && !this.state.q.hide_back > 0 ? (
-                        <div className={'btn btn-outline-primary'} onClick={this.back}
+                        <div className={this.props.buttonclasses} onClick={this.back}
                              data-journey-navs-id="back">Back</div>) : (null)}
                     {this.state.step > 0 && !this.state.q.hide_reset > 0 ? (
-                        <div className={'btn btn-outline-primary'} onClick={this.reset}
+                        <div className={this.props.buttonclasses} onClick={this.reset}
                              data-journey-navs-id="reset">Reset</div>) : (null)}
                 </div>
             </ListType>
