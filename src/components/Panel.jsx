@@ -206,7 +206,7 @@ class Panel extends Component {
         return (
             <ListType className={'journey'}>
                 {body}
-                <ListType className={'list ' + this.props.listwrapper} role="list">
+                <ListType className={this.props.listwrapper} role="list">
                     {as}
                 </ListType>
                 <div className="journey__navs">

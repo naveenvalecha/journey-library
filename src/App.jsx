@@ -1,3 +1,4 @@
+import 'core-js';
 import React, {Component} from 'react';
 import Panel from "./components/Panel";
 import 'whatwg-fetch';
