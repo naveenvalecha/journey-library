@@ -201,11 +201,7 @@ class Panel extends Component {
             </div>;
         }
 
-        console.log(this.props.listtype)
-        console.log(this.props.listwrapper)
-
         let ListType = `${this.props.listtype}`;
-
 
         return (
             <ListType className={'journey'}>
