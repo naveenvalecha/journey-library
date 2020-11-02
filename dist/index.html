@@ -4,31 +4,129 @@
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./extra/lb.css">
+    <link rel="stylesheet" href="./extra/extra.css">
+    <link rel="stylesheet" href="./extra/fancycard.css">
+    <link rel="stylesheet" href="./extra/convivialnsw.css">
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+    <script src="./handleRenderer.js"></script>
+
 </head>
 
 <body>
 <div class="container">
-    <div
-            id="journey"
-            class="journey"
-            data-environment="react"
-            data-uniqueid="journey"
-            data-debug="true"
+
+    <!--
+    --------------------------------------
+    --       Journey Readme             --
+    --------------------------------------
+
             data-taxonomy='journey'
-            data-source="http://localhost:32770/"
+            data-source="http://g8-lb.localhost/"           : Url to json source, required.
+            data-baseurl="http://g8-lb.localhost/"          : Url to where images are stored, required.
+            data-sourcepath="jsonapi/taxonomy_term"         : Path to source, required.
+
+            data-body-template="body"                       : Default body template, defaults to "body". Optional
+            data-body-classes="body"                        : Body classes, defaults to "body". Optional
+            data-body-wrapper="body-wrapper"                : Body wrapper classes, defaults to "body-wrapper". Optional
+
+            data-option-template="card"                     : Default option template, defaults to "body". Optional
+            data-outer-options-wrapper="list-layout"        : Option wrapper outer classes, defaults to "list-layout". Optional
+            data-options-classes="list journey__options"    : Option wrapper inner classes, defaults to "list". Optional
+            data-options-type="ul"                          : Option list type, defaults to "ul". Optional
+            data-option-classes="list__item journey__option": Option item classes, defaults to "list__item journey__option". Optional
+
+            data-option-type="li"                           : Option item type, defaults to "li". Optional.
+            data-nav-classes="btn":                         : Nav button classes, defaults to "btn". Optional.
+
+            data-debug=0                                    : Show debug box, defaults to 0. Optional
+            data-demo=1                                     : Fill up empty fields with dummy data, defaults to 0. Optional
+            data-demostyle="winter"                         : Type of demo content, defaults to "winter". Optional
+
+    -->
+<!--    <div-->
+<!--            data-renderer="govCMSJourneyRenderer"-->
+<!--            id="journey"-->
+
+<!--            data-taxonomy='journey'-->
+<!--            data-baseurl="https://dev-convivialjourney.pantheonsite.io/"-->
+<!--            data-source="https://dev-convivialjourney.pantheonsite.io/"-->
+<!--            data-sourcepath="jsonapi/taxonomy_term"-->
+
+<!--            class="journey au-grid"-->
+
+<!--            data-environment="react"-->
+<!--            data-uniqueid="journey"-->
+<!--            data-outer-options-wrapper="list-layout list-layout&#45;&#45;6-6"-->
+
+<!--            data-demo=1-->
+<!--            data-option-template="card"-->
+<!--            data-body-template="bodytitle"-->
+<!--            data-demostyle="business"-->
+
+<!--            data-identifier="journey"-->
+<!--    ></div>-->
+    <hr>
+    <div
+            data-renderer="govCMSJourneyRenderer"
+            id="journey"
+
+            data-taxonomy='journey'
             data-baseurl="http://localhost:32770/"
+            data-source="http://localhost:32770/"
             data-sourcepath="jsonapi/taxonomy_term"
-            data-listwrapper="l-wrapper"
-            data-itemwrapper="i-wrapper"
-            data-listtype="ul"
-            data-itemtype="li"
-            data-buttonclasses="btn"
+
+            class="secjour au-grid"
+
+            data-environment="react"
+            data-uniqueid="secjour"
+            data-outer-options-wrapper="list-layout-dis full-items"
+
+            data-demo=0
+            data-debug=0
+            data-option-template="card"
+            data-body-template="bodytitle"
+            data-demostyle="business"
+
+            data-identifier="secjour"
     ></div>
+
+
 </div>
 <script src="./bundle.js"></script>
-<script type="text/javascript">
-    mount("journey");
-</script>
-</body>
+<!--<script type="text/javascript">-->
+<!--    let ident = document.querySelectorAll('[data-identifier]');-->
 
+<!--    console.log(ident);-->
+
+<!--    if(ident && ident.length){-->
+<!--        ident.forEach( key => {-->
+<!--            let divid = key.id;-->
+<!--            mount(divid);-->
+<!--        })-->
+<!--    }-->
+
+
+
+<!--</script>-->
+</body>
 </html>
+
+
+<!--data-body-template="body"-->
+<!--data-body-classes="body"-->
+<!--data-body-wrapper="body-wrapper"-->
+
+<!--data-option-template="card"-->
+<!--data-outer-options-wrapper="list-layout"-->
+<!--data-options-classes="list journey__options"-->
+<!--data-options-type="ul"-->
+<!--data-option-classes="list__item journey__option"-->
+
+<!--data-option-type="li"-->
+<!--data-nav-classes="btn btn-outline-primary"-->
+
+<!--data-debug="false"-->
+<!--data-demo=1-->
+<!--data-demostyle="summer"-->

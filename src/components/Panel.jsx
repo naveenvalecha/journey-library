@@ -1,7 +1,12 @@
+/**
+ * Copyright Morpht Pty Ltd 2020
+ */
 import React, {Component} from 'react';
-import Unformatted from "./Unformatted";
 import HandleBar from "./HandleBar";
 import HandleBarBody from "./HandleBarBody";
+// import {motion, AnimatePresence} from "framer-motion"
+
+const mac = false;
 
 class Panel extends Component {
 
@@ -12,7 +17,9 @@ class Panel extends Component {
             journey: this.props.journey,
             q: '',
             as: {},
-            step: this.props.step
+            step: this.props.step,
+            extras: {},
+            ej: {},
         });
 
     }
@@ -22,11 +29,18 @@ class Panel extends Component {
     }
 
     /**
-     * Set the next question.
+     * Show the next question and options.
      */
     pickQuestion = () => {
-        let lastkey = Object.values(this.state.journey).splice(-1, 1)[0];
 
+        let lastkey = this.state.journey[this.state.step];
+
+        //Set to root if no question available.
+        if (!this.props.items[lastkey]) {
+            lastkey = this.props.root;
+        }
+
+        //Create object with answer objects.
         var as = {};
         Object.keys(this.props.items).map(key => {
             if (this.props.items[key].parent === lastkey) {
@@ -34,46 +48,96 @@ class Panel extends Component {
             }
         });
 
+
         this.setState({
             q: this.props.items[lastkey],
             as: as
         });
 
-        let journey = this.state.journey;
-        this.props.saveToLs({journey});
-
-
-        this.filterSmart();
+        // FilterSmart has been postponed
+        // this.filterSmart();
     }
 
     /**
      * Saving step to journey
      */
     processSelection = (c) => {
+
+        //Detect what step we are at
         let step = this.state.step;
         let journey = this.state.journey;
         step++;
         journey[step] = c;
+
+        let ej = this.state.ej;
+
+        ej[step] = {
+            id: c,
+            ho: this.state.as[c].option,
+            hs: this.state.as[c].field_step_summary,
+            q: this.state.q.id,
+            hq: this.state.q.body,
+        };
+
         if (this.props.items[c].jump !== null) {
             journey[step] = this.props.items[c].jump;
         }
 
+        //If the next in line does not belong to the current. Clear selection.
+
+        if (this.props.items[journey[step + 1]] && this.props.items[journey[step + 1]].parent) {
+            console.log(this.props.items[journey[step + 1]].parent);
+            console.log(journey[step]);
+
+            let i=1;
+            while (journey[step + i]) {
+                delete journey[step + i];
+                delete ej[step + i];
+            }
+        }
+
+
         this.setState({
             journey: journey,
             step: step,
+            ej: ej,
         }, () => this.pickQuestion());
 
+        this.props.saveEJ(ej);
+
         if (this.props.items[c].setter) {
-            localStorage.setItem(
-                this.props.items[c].setter.key,
-                this.props.items[c].setter.value
-            );
+            if (this.props.items[c].setter.length) {
+                this.props.items[c].setter.map(key => {
+                    // console.log(key);
+                    // console.log(this.props.items[c].setter[key]);
+                    if (key.key) {
+                        localStorage.setItem(
+                            key.key,
+                            key.value
+                        );
+                    }
+                });
+
+                localStorage.setItem(
+                    this.props.items[c].setter.key,
+                    this.props.items[c].setter.value
+                );
+            }
         }
 
         if (this.props.items[c].redirect && this.props.items[c].redirect !== null && this.props.items[c].redirect !== 'null') {
-            // window.location.href = this.props.items[c].redirect;
+
+            //@ToDo: Get url rather than internal id(or feed current node to template)
+            console.log('Current');
+            console.log(window.location.href);
+            console.log('Redirect');
+            console.log(this.props.items[c].redirect);
+            console.log('Redirecting to ' + this.props.items[c].redirect);
+            window.location.href = this.props.items[c].redirect;
         }
 
+        this.props.saveToLs({journey}, 'journey', step);
+        //Reset to beginning of journey if object data model doesn't match.
         if (!this.state.q) {
             this.reset();
         }
@@ -112,20 +176,34 @@ class Panel extends Component {
      * Take one step back in the journey
      */
     back = () => {
-        let step = this.state.step;
-        var journey = this.state.journey;
+        this.takeStep(-1)
+    }
 
-        if (step === 0 || journey.length < 2) {
+    takeStep = (adjust) => {
+
+        var step = this.state.step;
+        var journey = this.state.journey;
+        var ej = this.state.ej;
+
+        if ((step === 0 || journey.length < 2) && adjust < 0) {
             return;
         }
 
-        delete journey[step];
-        step--;
+        step = step + adjust;
 
         this.setState({
             journey: journey,
+            ej: ej,
             step: step,
         }, () => this.pickQuestion());
+
+        this.props.saveEJ(ej);
+        this.props.saveToLs({journey}, 'journey', step);
+    }
+
+
+    forward = () => {
+        this.takeStep(1)
     }
 
     /**
@@ -134,12 +212,29 @@ class Panel extends Component {
     reset = () => {
         let step = 0;
         let root = this.props.root
+        let journey = {0: root}
 
         this.setState({
             journey: {0: root},
             step: step,
+            ej: {}
         }, () => this.pickQuestion());
 
+        this.props.saveEJ({});
+        this.props.saveToLs({journey}, 'journey', step);
+
+    }
+
+    /**
+     * Extras not used at the moment.
+     **/
+    getExtras = (extras, id) => {
+        let storedextras = this.state.extras;
+        storedextras[id] = extras;
+
+        this.setState({
+            extras: storedextras
+        }, () => this.props.saveToLs(storedextras, 'extras'));
     }
 
     render() {
@@ -147,77 +242,95 @@ class Panel extends Component {
         let hb = false;
 
         if (typeof Drupal !== 'undefined' && Drupal && Drupal.jsonTemplate && Drupal.jsonTemplate.render) {
-            hb = true;
+            hb = 2;
+        } else if (window.hb) {
+            // console.log('No external handlebars handler detected. Utilise local handlebar templates.');
+            hb = 1;
         } else {
-            console.log('No handlebars handler detected. Utilise default template.');
+            // console.log('No handlebar available. Using internal defaults');
+            hb = 0;
         }
+        let template = this.props.optionTemplate;
 
+        if (this.state.q.template) {
+            template = this.state.q.template
+        }
 
         let as = Object.keys(this.state.as).map(key => {
 
-            if (this.state.as[key].display === 'button') {
-                return <div className={'btn btn-primary'} key={key}
-                            onClick={() => this.processSelection(key)}>{this.state.as[key].name}</div>
-            }
-
-
-            if (hb) {
-                return <HandleBar
-                    data={this.state.as[key]}
-                    key={key}
-                    click={this.processSelection}
-                    info={this.state.as[key]}
-                    ID={key}
-                    itemtype={this.props.itemtype}
-                    itemwrapper={this.props.itemwrapper}
-                    optiontemplate={this.props.optiontemplate}
-                    included={this.props.included}
-                />
-            }
-
-            return <Unformatted
+            return <HandleBar
+                data={this.state.as[key]}
                 key={key}
                 click={this.processSelection}
                 info={this.state.as[key]}
                 ID={key}
-            />;
+                optiontype={this.props.optionType}
+                optionClasses={this.props.optionClasses}
+                optionTemplate={template}
+                included={this.props.included}
+                baseurl={this.props.baseurl}
+                hb={hb}
+                demo={this.props.demo}
+                demostyle={this.props.demostyle}
+            />
         });
 
-
-        if (hb) {
-            var body = <HandleBarBody
-                bodywrapper={this.props.bodywrapper}
-                bodytemplate={this.props.bodytemplate}
+        var body =
+            <HandleBarBody
+                bodyWrapper={this.props.bodyWrapper}
+                bodyTemplate={this.props.bodyTemplate}
+                bodyClasses={this.props.bodyClasses}
                 data={this.state.q}
+                extras={this.state.extras[this.state.q.id]}
+                hb={hb}
+                getExtras={this.getExtras}
+                demo={this.props.demo}
+                demostyle={this.props.demostyle}
             />
-        } else {
-            var body = <div className={'question journey__step'}>
-                <ul className="list-group">
-                    <li className="list-group-item">
-                        <p>{this.state.q.name}</p>
-                        <div dangerouslySetInnerHTML={{__html: this.state.q.field_step_body}}/>
-                    </li>
-                </ul>
-            </div>;
+
+        if (this.state.q.template && this.state.q.template.startsWith('takeover-')) {
+            if (this.state.q.template === 'takeover-calculator') {
+                body = <Calculator
+
+                    data={this.state.q}
+
+                />
+            }
         }
 
-        let ListType = `${this.props.listtype}`;
+        let ListType = `${this.props.optionsType}`;
 
         return (
-            <ListType className={'journey'}>
+
+            <div className={'journey'}>
                 {body}
-                <ListType className={this.props.listwrapper} role="list">
-                    {as}
-                </ListType>
+                <div className={this.state.q.classes ? this.state.q.classes : this.props.outerOptionsWrapper}>
+                    {/*Animations disabled for demo*/}
+                    {/*<AnimatePresence exitBeforeEnter>*/}
+                    {/*    <motion.div key={this.state.q.id}*/}
+                    {/*                initial={{x: 400, opacity: 0}}*/}
+                    {/*                animate={{x: 0, opacity: 1}}*/}
+                    {/*                exit={{x: -400, opacity: 0}}*/}
+                    {/*    >*/}
+                    <ListType className={this.props.optionsClasses} role="list">
+                        {as}
+                    </ListType>
+                    {/*    </motion.div>*/}
+                    {/*</AnimatePresence>*/}
+                </div>
                 <div className="journey__navs">
                     {this.state.step > 0 && !this.state.q.hide_back > 0 ? (
-                        <div className={this.props.buttonclasses} onClick={this.back}
+                        <div className={this.props.navClasses} onClick={this.back}
                              data-journey-navs-id="back">Back</div>) : (null)}
+                    {!this.state.q.hide_back > 0 && this.state.step + 1 < Object.keys(this.state.journey).length ? (
+                        <div className={this.props.navClasses} onClick={this.forward}
+                             data-journey-navs-id="back">Forward</div>) : (null)}
                     {this.state.step > 0 && !this.state.q.hide_reset > 0 ? (
-                        <div className={this.props.buttonclasses} onClick={this.reset}
+                        <div className={this.props.navClasses} onClick={this.reset}
                              data-journey-navs-id="reset">Reset</div>) : (null)}
                 </div>
-            </ListType>
+            </div>
+
         );
     }
 }

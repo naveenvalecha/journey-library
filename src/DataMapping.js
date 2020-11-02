@@ -1,13 +1,6 @@
 /**
- *
- * @ToDo: Make more robust, handle missing parameters.
- * @ToDo: Make parameter assignement more generic.
- *
- *
- *
- *
+ * Copyright Morpht Pty Ltd 2020
  */
-
 
 
 /**
@@ -18,7 +11,7 @@
  * @param type
  * @param uuid
  * @param included
- * @returns {null}
+ * @returns Object
  */
 function getRelation(type, uuid, included) {
 
@@ -37,8 +30,14 @@ function getRelation(type, uuid, included) {
                     value = {
                         "key": included[key].attributes.field_attribute_key,
                         "value": included[key].attributes.field_attribute_value,
-                    }
-                    ;
+                    };
+                } else if (included[key].attributes.parent_field_name && included[key].attributes.parent_field_name === "field_question") {
+                    // console.log('------ Got attributes.parent_field_name ------');
+                    value = {
+                        "label": included[key].attributes.field_label,
+                        "type": included[key].attributes.field_type,
+                        "options": included[key].attributes.field_options,
+                    };
                 } else {
                     console.log('------ No mapping defined for this item ------');
                     console.log(included[key].attributes);
@@ -56,45 +55,27 @@ function getRelation(type, uuid, included) {
     return value;
 }
 
-/**
- * Genric mapper
- */
-
-function genericJsonapiMapper(relationships, included){
-
-        // console.log(relationships);
-         console.log(included);
-
-
-    Object.keys(relationships).map(key => {
-        if(relationships[key].data && relationships[key].data['id']){
-            console.log(relationships[key].data['id']);
-        }
-
-    });
-
-}
-
 
 /**
  * Assign items from feed.
  */
-function assignItems (data, baseurl) {
+function assignItems(data, baseurl) {
 
     var items = {};
     var root = 0;
 
-    console.log('--- Assigning Data ---');
+    // console.log('--- Assigning Data ---');
 
     Object.keys(data.data).map(key => {
 
-        var setter = null;
+        var setter = [];
         var field_step_image = null;
         var jump = null;
         let body = '';
         let summary = '';
         let redirect = null;
         let trigger = null;
+        let question = null;
 
         // genericJsonapiMapper(data.data[key].relationships, data.included);
 
@@ -102,8 +83,23 @@ function assignItems (data, baseurl) {
         if (data.data[key].relationships.field_step_attributes) {
             if (data.data[key].relationships.field_step_attributes.data) {
                 if (data.data[key].relationships.field_step_attributes.data[0]) {
-                    setter = getRelation('field_step_attributes', data.data[key].relationships.field_step_attributes.data[0].id, data.included);
+                    setter.push(getRelation('field_step_attributes', data.data[key].relationships.field_step_attributes.data[0].id, data.included));
+
+                    // field_step_custom_setter
                 }
+            }
+        }
+
+        if (data.data[key].attributes.field_step_custom_setter) {
+            if (data.data[key].attributes.field_step_custom_setter.length) {
+                data.data[key].attributes.field_step_custom_setter.map(setterkey => {
+                    // console.log(data.data[key].attributes.field_step_custom_setter[setterkey]);
+                    let keyset = setterkey.split(':');
+
+                    setter.push({"key": keyset[0], "value": keyset[1]});
+                })
+
+
             }
         }
 
@@ -129,6 +125,13 @@ function assignItems (data, baseurl) {
             }
         }
 
+        if (data.data[key].relationships.field_question && data.data[key].relationships.field_question.data !== null) {
+
+            question = getRelation('field_question', data.data[key].relationships.field_question.data.id, data.included);
+
+        }
+
+
         if (data.data[key].attributes.field_step_body) {
             body = data.data[key].attributes.field_step_body.processed;
         }
@@ -141,6 +144,8 @@ function assignItems (data, baseurl) {
         if (data.data[key].attributes.field_step_redirect) {
             if (data.data[key].attributes.field_step_redirect.uri.startsWith("entity:")) {
                 redirect = baseurl + '/' + data.data[key].attributes.field_step_redirect.uri.split(':')[1]
+            } else {
+                redirect = data.data[key].attributes.field_step_redirect.uri
             }
         }
 
@@ -154,16 +159,25 @@ function assignItems (data, baseurl) {
         var classes = '';
         Object.keys(data.data[key].attributes).map(k => {
 
-            if(k.includes('classes')){
-                if(data.data[key].attributes[k] && data.data[key].attributes[k].length > 0){
-                    classes = classes + ' ' +  data.data[key].attributes[k] && data.data[key].attributes[k].join(' ');
+            if (k.includes('classes')) {
+                if (data.data[key].attributes[k] && data.data[key].attributes[k].length > 0) {
+                    // console.log(data.data[key].attributes[k] && data.data[key].attributes[k]);
+                    classes = classes + ' ' + data.data[key].attributes[k] && data.data[key].attributes[k];
                 }
             }
         });
-        items[data.data[key].id] = {
 
+        let name = data.data[key].attributes.name;
+        // console.log(data.data[key]);
+        if(data.data[key].attributes.field_step_option_name){
+            name = data.data[key].attributes.field_step_option_name;
+        }
+
+
+        items[data.data[key].id] = {
             //Option values
-            'name': data.data[key].attributes.name,
+            'option': name,
+            'name': name,
             'field_step_body': body,
             'field_step_image': field_step_image,
             'classes': classes,
@@ -171,7 +185,7 @@ function assignItems (data, baseurl) {
             'field_step_summary': summary,
             'id': data.data[key].id,
             'display': data.data[key].attributes.field_display,
-            'question': data.data[key].attributes.name,
+            'question': name,
             'hide_back': data.data[key].attributes.field_step_hide_back_button,
             'hide_reset': data.data[key].attributes.field_step_hide_reset_button,
             'tid': data.data[key].attributes.drupal_internal__tid,
@@ -180,7 +194,10 @@ function assignItems (data, baseurl) {
             'description': desc,
             'body': body,
             'redirect': redirect,
+            'weight': data.data[key].attributes.weight,
             'trigger': trigger,
+            'template': data.data[key].attributes.field_step_template,
+            'custquestion': question,
             'parent': data.data[key].relationships.parent.data[0].id,
             'data': data.data[key]
         }
@@ -188,6 +205,7 @@ function assignItems (data, baseurl) {
 
     return items;
 }
+
 
 module.exports = {
     getRelation: getRelation,

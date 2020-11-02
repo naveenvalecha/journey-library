@@ -52,6 +52,7 @@ module.exports = {
   devServer: {
     contentBase: './dist',
     hot: true,
+    disableHostCheck: true
     // headers: { 
     //   enablePreflight: true,
     //   'Access-Control-Allow-Origin': '*',
