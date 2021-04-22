@@ -1,0 +1,82 @@
+@charset "UTF-8";
+.body-wrapperbody {
+  padding-bottom: 40px;
+}
+.body-wrapperbody .layout__region.title__title {
+  border: 0px;
+}
+
+.active {
+  opacity: 0.4;
+}
+
+.journey__options {
+  padding-left: 0;
+  list-style: none;
+}
+.journey__options .btn {
+  width: 100%;
+}
+
+.journey {
+  padding-bottom: 100px;
+  min-height: 600px;
+}
+.journey .l-wrapper {
+  margin: 0px;
+  padding: 0px;
+}
+.journey .au-card {
+  cursor: pointer;
+  padding-top: 12px;
+}
+.journey .i-wrapper > .button {
+  font-size: 24px;
+  font-size: 1.5rem;
+  padding: 12px 58px 12px 24px;
+  padding: 0.75rem 3.6rem 0.75rem 1.5rem;
+  background: #00698f;
+  color: #fff;
+  display: block;
+  font-weight: 400;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.journey .i-wrapper > .button:after {
+  right: 24px;
+  right: 1.5rem;
+  top: 14px;
+  top: 0.9rem;
+  position: absolute;
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 0.8em;
+}
+.journey .i-wrapper > .button:hover {
+  background: #313131;
+  color: #fff;
+  text-decoration: underline;
+}
+.journey .btn-outline-primary {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.journey .field--name-field-media-image img {
+  max-width: 100%;
+}
+.journey ul {
+  list-style: none;
+}
+.journey .journey__option {
+  padding-bottom: 20px;
+}
+
+.journey__navs {
+  position: absolute;
+  bottom: 0px;
+}
+
+/*# sourceMappingURL=extra.css.map */
