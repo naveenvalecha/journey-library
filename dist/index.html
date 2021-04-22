@@ -22,7 +22,7 @@
     --       Journey Readme             --
     --------------------------------------
 
-            data-taxonomy='aj1'
+            data-taxonomy='journey'
             data-source="http://g8-lb.localhost/"           : Url to json source, required.
             data-baseurl="http://g8-lb.localhost/"          : Url to where images are stored, required.
             data-sourcepath="jsonapi/taxonomy_term"         : Path to source, required.
@@ -45,37 +45,40 @@
             data-demostyle="winter"                         : Type of demo content, defaults to "winter". Optional
 
     -->
-<!--    <div-->
-<!--            data-renderer="govCMSJourneyRenderer"-->
-<!--            id="journey"-->
+    <!--    <div-->
+    <!--            data-renderer="govCMSJourneyRenderer"-->
+    <!--            id="journey"-->
 
-<!--            data-taxonomy='journey'-->
-<!--            data-baseurl="https://dev-convivialjourney.pantheonsite.io/"-->
-<!--            data-source="https://dev-convivialjourney.pantheonsite.io/"-->
-<!--            data-sourcepath="jsonapi/taxonomy_term"-->
+    <!--            data-taxonomy='journey'-->
+    <!--            data-baseurl="https://dev-convivialjourney.pantheonsite.io/"-->
+    <!--            data-source="https://dev-convivialjourney.pantheonsite.io/"-->
+    <!--            data-sourcepath="jsonapi/taxonomy_term"-->
 
-<!--            class="journey au-grid"-->
+    <!--            class="journey au-grid"-->
 
-<!--            data-environment="react"-->
-<!--            data-uniqueid="journey"-->
-<!--            data-outer-options-wrapper="list-layout list-layout&#45;&#45;6-6"-->
+    <!--            data-environment="react"-->
+    <!--            data-uniqueid="journey"-->
+    <!--            data-outer-options-wrapper="list-layout list-layout&#45;&#45;6-6"-->
 
-<!--            data-demo=1-->
-<!--            data-option-template="card"-->
-<!--            data-body-template="bodytitle"-->
-<!--            data-demostyle="business"-->
+    <!--            data-demo=1-->
+    <!--            data-option-template="card"-->
+    <!--            data-body-template="bodytitle"-->
+    <!--            data-demostyle="business"-->
 
-<!--            data-identifier="journey"-->
-<!--    ></div>-->
+    <!--            data-identifier="journey"-->
+    <!--    ></div>-->
+    <!--            data-baseurl="http://localhost:32908/"-->
+    <!--            data-source="http://localhost:32908/"-->
+<!--    data-sourcepath="jsonapi/taxonomy_term"-->
     <hr>
     <div
             data-renderer="govCMSJourneyRenderer"
             id="journey"
 
-            data-taxonomy='journey'
-            data-baseurl="http://localhost:32770/"
-            data-source="http://localhost:32770/"
-            data-sourcepath="jsonapi/taxonomy_term"
+            data-taxonomy='aj1'
+            data-baseurl="http://convivial-get.localhost:8888/"
+            data-source="/"
+            data-sourcepath="extra"
 
             class="secjour au-grid"
 
@@ -92,6 +95,14 @@
             data-identifier="secjour"
     ></div>
 
+<!--    <div-->
+<!--            id="journey"-->
+<!--            data-taxonomy='journey'-->
+<!--            data-sourcepath="extra"-->
+<!--            data-baseurl="http://localhost:8080/"-->
+<!--            data-identifier="secjour"-->
+<!--    ></div>-->
+
 
 </div>
 <script src="./bundle.js"></script>
@@ -106,7 +117,6 @@
 <!--            mount(divid);-->
 <!--        })-->
 <!--    }-->
-
 
 
 <!--</script>-->

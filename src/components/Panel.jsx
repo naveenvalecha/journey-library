@@ -81,6 +81,7 @@ class Panel extends Component {
 
         if (this.props.items[c].jump !== null) {
             journey[step] = this.props.items[c].jump;
+            console.log(journey[step])
         }
 
         //If the next in line does not belong to the current. Clear selection.
@@ -89,7 +90,7 @@ class Panel extends Component {
             console.log(this.props.items[journey[step + 1]].parent);
             console.log(journey[step]);
 
-            let i=1;
+            let i = 1;
             while (journey[step + i]) {
                 delete journey[step + i];
                 delete ej[step + i];
@@ -241,13 +242,29 @@ class Panel extends Component {
 
         let hb = false;
 
-        if (typeof Drupal !== 'undefined' && Drupal && Drupal.jsonTemplate && Drupal.jsonTemplate.render) {
+        //Debugging for json template
+        if (typeof Drupal !== 'undefined' && Drupal){
+            console.log('Drupal object exists, printing jsonTemplate')
+            // console.log(Drupal)
+            console.log(Drupal.jsonTemplate)
+            // console.log('window')
+            // console.log(window)
+
+
+        }
+
+
+            if (typeof Drupal !== 'undefined' && Drupal && Drupal.jsonTemplate && Drupal.jsonTemplate.render) {
             hb = 2;
+            console.log('Drupal json template detected. Using it to render.');
         } else if (window.hb) {
-            // console.log('No external handlebars handler detected. Utilise local handlebar templates.');
+
+            // console.log(Drupal);
+            // console.log(Drupal.jsonTemplate);
+            console.log('No external handlebars handler detected. Utilise local handlebar templates.');
             hb = 1;
         } else {
-            // console.log('No handlebar available. Using internal defaults');
+            console.log('No handlebar available. Using internal defaults');
             hb = 0;
         }
         let template = this.props.optionTemplate;

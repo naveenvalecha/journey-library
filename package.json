@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "build": "webpack --mode=production"
+    "refac": "webpack-dev-server --config ./refac.config.js --mode development",
+    "refacbuild": "webpack --config ./refac.config.js --mode development",
+    "build": "webpack --mode=production",
+    "deploy": "cp dist/bundle.js ../convivial-get/web/modules/custom/journey/js/journey.js"
   },
   "keywords": [],
   "author": "",

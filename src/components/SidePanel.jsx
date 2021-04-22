@@ -14,6 +14,14 @@ class SidePanel extends Component {
         }
     }
 
+    takeStep = (c) => {
+        console.log(c.currentTarget.dataset.id)
+
+
+        // this.props.moveInTree(c.currentTarget.dataset.id)
+
+    }
+
 
     render() {
 

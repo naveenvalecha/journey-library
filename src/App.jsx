@@ -144,7 +144,7 @@ class App extends Component {
             })
         }
 
-        this.checkUrl();
+        // this.checkUrl();
         let fetchstring = this.source + '' + this.props.sourcepath + '/' + this.props.taxonomy + '?include=field_step_attributes,field_step_image&sort=weight';
         this.fetchData(fetchstring)
 
@@ -260,6 +260,25 @@ class App extends Component {
         })
     }
 
+    moveInTree = (step) => {
+
+
+
+        Object.keys(this.state.journey).map(key => {
+            console.log(this.state.journey[key])
+            console.log(step)
+            if(this.state.journey[key] === step){
+                this.setState({
+                    step: key
+                })
+            }
+        })
+
+        // this.setState({
+        //     step: step + 1
+        // }, () => this.render())
+    }
+
     takeStep = (step) => {
         this.setState({
             step: step + 1
@@ -318,7 +337,7 @@ class App extends Component {
                             <div className="col-xs-4">
                                 <SidePanel hj={this.state.ej}
                                            step={this.state.step}
-                                           takeStep={this.takeStep}
+                                           moveInTree={this.moveInTree}
                                 /></div>
                         </div>
                     </div>

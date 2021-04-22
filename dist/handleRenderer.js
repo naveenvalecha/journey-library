@@ -109,7 +109,7 @@ window.hb = {
                 <div class="content">
                     <div
                         class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
-                        {{{base.data.field_step_summary}}}
+                        {{{data.field_step_summary}}}
                     </div>
                 </div>
             </div>

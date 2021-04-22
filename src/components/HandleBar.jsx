@@ -24,6 +24,9 @@ class HandleBar extends Component {
         let summary = this.props.data.field_step_summary === "" && this.props.demo > 0 ? window.lipsum.one() : this.props.data.field_step_summary
 
         let rendered;
+
+        console.log(this.props.optiontemplate);
+
         if (this.props.hb === 2) {
             rendered = Drupal.jsonTemplate.render({data: this.props.data}, this.props.optiontemplate);
         } else if (this.props.hb === 1) {
