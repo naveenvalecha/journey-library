@@ -1,0 +1,1524 @@
+{
+  "jsonapi": {
+    "version": "1.0",
+    "meta": {
+      "links": {
+        "self": {
+          "href": "http:\/\/jsonapi.org\/format\/1.0\/"
+        }
+      }
+    }
+  },
+  "data": [
+    {
+      "type": "taxonomy_term--aj1",
+      "id": "1d07bbef-1eb2-47b9-83e8-d5e17462a598",
+      "links": {
+        "self": {
+          "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/1d07bbef-1eb2-47b9-83e8-d5e17462a598"
+        }
+      },
+      "attributes": {
+        "drupal_internal__tid": 55,
+        "drupal_internal__revision_id": 55,
+        "langcode": "en",
+        "revision_created": "2020-09-25T00:23:11+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "20-35 years",
+        "description": null,
+        "weight": 0,
+        "changed": "2020-09-25T00:25:11+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "metatag": null,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        },
+        "field_step_body": null,
+        "field_step_option_name": "20-35 years",
+        "field_step_redirect": null,
+        "field_step_summary": null,
+        "field_step_trigger": []
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy_vocabulary--taxonomy_vocabulary",
+            "id": "d1e7d4ce-2b3b-4d45-9f48-cd6f8abbcde9"
+          },
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/1d07bbef-1eb2-47b9-83e8-d5e17462a598\/vid"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/1d07bbef-1eb2-47b9-83e8-d5e17462a598\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/1d07bbef-1eb2-47b9-83e8-d5e17462a598\/revision_user"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/1d07bbef-1eb2-47b9-83e8-d5e17462a598\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy_term--aj1",
+              "id": "c7abb9a0-dc8a-4f38-962e-d97b984a7ce5"
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/1d07bbef-1eb2-47b9-83e8-d5e17462a598\/parent"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/1d07bbef-1eb2-47b9-83e8-d5e17462a598\/relationships\/parent"
+            }
+          }
+        },
+        "field_step_attributes": {
+          "data": [],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/1d07bbef-1eb2-47b9-83e8-d5e17462a598\/field_step_attributes"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/1d07bbef-1eb2-47b9-83e8-d5e17462a598\/relationships\/field_step_attributes"
+            }
+          }
+        },
+        "field_step_image": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/1d07bbef-1eb2-47b9-83e8-d5e17462a598\/field_step_image"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/1d07bbef-1eb2-47b9-83e8-d5e17462a598\/relationships\/field_step_image"
+            }
+          }
+        },
+        "field_step_jump": {
+          "data": {
+            "type": "taxonomy_term--aj1",
+            "id": "84abbfad-8caa-4833-a47b-75cc5a73b5cd"
+          },
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/1d07bbef-1eb2-47b9-83e8-d5e17462a598\/field_step_jump"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/1d07bbef-1eb2-47b9-83e8-d5e17462a598\/relationships\/field_step_jump"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "taxonomy_term--aj1",
+      "id": "7b73b0f8-2125-4887-af0b-fbad5b2d8838",
+      "links": {
+        "self": {
+          "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/7b73b0f8-2125-4887-af0b-fbad5b2d8838"
+        }
+      },
+      "attributes": {
+        "drupal_internal__tid": 52,
+        "drupal_internal__revision_id": 52,
+        "langcode": "en",
+        "revision_created": "2020-09-25T00:17:28+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "Coughing",
+        "description": null,
+        "weight": 0,
+        "changed": "2020-09-25T00:24:58+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "metatag": null,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        },
+        "field_step_body": {
+          "value": "\u003Cp\u003EWhat kind of coughing\u003C\/p\u003E\r\n",
+          "format": "rich_text",
+          "processed": "\u003Cp\u003EWhat kind of coughing\u003C\/p\u003E"
+        },
+        "field_step_option_name": "Coughing",
+        "field_step_redirect": null,
+        "field_step_summary": null,
+        "field_step_trigger": []
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy_vocabulary--taxonomy_vocabulary",
+            "id": "d1e7d4ce-2b3b-4d45-9f48-cd6f8abbcde9"
+          },
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/7b73b0f8-2125-4887-af0b-fbad5b2d8838\/vid"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/7b73b0f8-2125-4887-af0b-fbad5b2d8838\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/7b73b0f8-2125-4887-af0b-fbad5b2d8838\/revision_user"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/7b73b0f8-2125-4887-af0b-fbad5b2d8838\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy_term--aj1",
+              "id": "84abbfad-8caa-4833-a47b-75cc5a73b5cd"
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/7b73b0f8-2125-4887-af0b-fbad5b2d8838\/parent"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/7b73b0f8-2125-4887-af0b-fbad5b2d8838\/relationships\/parent"
+            }
+          }
+        },
+        "field_step_attributes": {
+          "data": [],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/7b73b0f8-2125-4887-af0b-fbad5b2d8838\/field_step_attributes"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/7b73b0f8-2125-4887-af0b-fbad5b2d8838\/relationships\/field_step_attributes"
+            }
+          }
+        },
+        "field_step_image": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/7b73b0f8-2125-4887-af0b-fbad5b2d8838\/field_step_image"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/7b73b0f8-2125-4887-af0b-fbad5b2d8838\/relationships\/field_step_image"
+            }
+          }
+        },
+        "field_step_jump": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/7b73b0f8-2125-4887-af0b-fbad5b2d8838\/field_step_jump"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/7b73b0f8-2125-4887-af0b-fbad5b2d8838\/relationships\/field_step_jump"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "taxonomy_term--aj1",
+      "id": "a9925d9e-e351-4ee8-9944-517d44c5d5b1",
+      "links": {
+        "self": {
+          "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/a9925d9e-e351-4ee8-9944-517d44c5d5b1"
+        }
+      },
+      "attributes": {
+        "drupal_internal__tid": 53,
+        "drupal_internal__revision_id": 53,
+        "langcode": "en",
+        "revision_created": "2020-09-25T00:18:21+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "Dry coughing",
+        "description": null,
+        "weight": 0,
+        "changed": "2020-09-25T00:18:43+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "metatag": null,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        },
+        "field_step_body": null,
+        "field_step_option_name": "Dry",
+        "field_step_redirect": null,
+        "field_step_summary": null,
+        "field_step_trigger": []
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy_vocabulary--taxonomy_vocabulary",
+            "id": "d1e7d4ce-2b3b-4d45-9f48-cd6f8abbcde9"
+          },
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/a9925d9e-e351-4ee8-9944-517d44c5d5b1\/vid"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/a9925d9e-e351-4ee8-9944-517d44c5d5b1\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/a9925d9e-e351-4ee8-9944-517d44c5d5b1\/revision_user"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/a9925d9e-e351-4ee8-9944-517d44c5d5b1\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy_term--aj1",
+              "id": "7b73b0f8-2125-4887-af0b-fbad5b2d8838"
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/a9925d9e-e351-4ee8-9944-517d44c5d5b1\/parent"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/a9925d9e-e351-4ee8-9944-517d44c5d5b1\/relationships\/parent"
+            }
+          }
+        },
+        "field_step_attributes": {
+          "data": [],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/a9925d9e-e351-4ee8-9944-517d44c5d5b1\/field_step_attributes"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/a9925d9e-e351-4ee8-9944-517d44c5d5b1\/relationships\/field_step_attributes"
+            }
+          }
+        },
+        "field_step_image": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/a9925d9e-e351-4ee8-9944-517d44c5d5b1\/field_step_image"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/a9925d9e-e351-4ee8-9944-517d44c5d5b1\/relationships\/field_step_image"
+            }
+          }
+        },
+        "field_step_jump": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/a9925d9e-e351-4ee8-9944-517d44c5d5b1\/field_step_jump"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/a9925d9e-e351-4ee8-9944-517d44c5d5b1\/relationships\/field_step_jump"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "taxonomy_term--aj1",
+      "id": "510594e6-7f25-4a13-80dc-d28628ea0acb",
+      "links": {
+        "self": {
+          "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/510594e6-7f25-4a13-80dc-d28628ea0acb"
+        }
+      },
+      "attributes": {
+        "drupal_internal__tid": 49,
+        "drupal_internal__revision_id": 49,
+        "langcode": "en",
+        "revision_created": "2020-09-25T00:14:17+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "No, I\u0027m ok",
+        "description": null,
+        "weight": 0,
+        "changed": "2020-09-25T00:14:17+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "metatag": null,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        },
+        "field_step_body": {
+          "value": "\u003Cp\u003EGreat, feel free to revisit if that changes.\u003C\/p\u003E\r\n\r\n\u003Cp\u003EFor now here are some tips for a healthy life.\u003C\/p\u003E\r\n\r\n\u003Cp\u003EEat veggies\u003C\/p\u003E\r\n\r\n\u003Cp\u003EExcercise\u003C\/p\u003E\r\n\r\n\u003Cp\u003EGo out in the sun\u003C\/p\u003E\r\n",
+          "format": "rich_text",
+          "processed": "\u003Cp\u003EGreat, feel free to revisit if that changes.\u003C\/p\u003E\n\n\u003Cp\u003EFor now here are some tips for a healthy life.\u003C\/p\u003E\n\n\u003Cp\u003EEat veggies\u003C\/p\u003E\n\n\u003Cp\u003EExcercise\u003C\/p\u003E\n\n\u003Cp\u003EGo out in the sun\u003C\/p\u003E"
+        },
+        "field_step_option_name": "No, I\u0027m ok",
+        "field_step_redirect": null,
+        "field_step_summary": null,
+        "field_step_trigger": []
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy_vocabulary--taxonomy_vocabulary",
+            "id": "d1e7d4ce-2b3b-4d45-9f48-cd6f8abbcde9"
+          },
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/510594e6-7f25-4a13-80dc-d28628ea0acb\/vid"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/510594e6-7f25-4a13-80dc-d28628ea0acb\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/510594e6-7f25-4a13-80dc-d28628ea0acb\/revision_user"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/510594e6-7f25-4a13-80dc-d28628ea0acb\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy_term--aj1",
+              "id": "8eee9280-e875-46b9-ba19-b1a548a22771"
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/510594e6-7f25-4a13-80dc-d28628ea0acb\/parent"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/510594e6-7f25-4a13-80dc-d28628ea0acb\/relationships\/parent"
+            }
+          }
+        },
+        "field_step_attributes": {
+          "data": [],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/510594e6-7f25-4a13-80dc-d28628ea0acb\/field_step_attributes"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/510594e6-7f25-4a13-80dc-d28628ea0acb\/relationships\/field_step_attributes"
+            }
+          }
+        },
+        "field_step_image": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/510594e6-7f25-4a13-80dc-d28628ea0acb\/field_step_image"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/510594e6-7f25-4a13-80dc-d28628ea0acb\/relationships\/field_step_image"
+            }
+          }
+        },
+        "field_step_jump": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/510594e6-7f25-4a13-80dc-d28628ea0acb\/field_step_jump"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/510594e6-7f25-4a13-80dc-d28628ea0acb\/relationships\/field_step_jump"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "taxonomy_term--aj1",
+      "id": "2189fecb-4a8f-4973-b88d-0d5ebdb1f42f",
+      "links": {
+        "self": {
+          "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/2189fecb-4a8f-4973-b88d-0d5ebdb1f42f"
+        }
+      },
+      "attributes": {
+        "drupal_internal__tid": 57,
+        "drupal_internal__revision_id": 57,
+        "langcode": "en",
+        "revision_created": "2020-09-25T00:25:32+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "36-50 years old",
+        "description": null,
+        "weight": 1,
+        "changed": "2020-09-25T00:26:07+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "metatag": null,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        },
+        "field_step_body": null,
+        "field_step_option_name": "36-50 years old",
+        "field_step_redirect": null,
+        "field_step_summary": null,
+        "field_step_trigger": []
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy_vocabulary--taxonomy_vocabulary",
+            "id": "d1e7d4ce-2b3b-4d45-9f48-cd6f8abbcde9"
+          },
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/2189fecb-4a8f-4973-b88d-0d5ebdb1f42f\/vid"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/2189fecb-4a8f-4973-b88d-0d5ebdb1f42f\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/2189fecb-4a8f-4973-b88d-0d5ebdb1f42f\/revision_user"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/2189fecb-4a8f-4973-b88d-0d5ebdb1f42f\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy_term--aj1",
+              "id": "c7abb9a0-dc8a-4f38-962e-d97b984a7ce5"
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/2189fecb-4a8f-4973-b88d-0d5ebdb1f42f\/parent"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/2189fecb-4a8f-4973-b88d-0d5ebdb1f42f\/relationships\/parent"
+            }
+          }
+        },
+        "field_step_attributes": {
+          "data": [],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/2189fecb-4a8f-4973-b88d-0d5ebdb1f42f\/field_step_attributes"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/2189fecb-4a8f-4973-b88d-0d5ebdb1f42f\/relationships\/field_step_attributes"
+            }
+          }
+        },
+        "field_step_image": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/2189fecb-4a8f-4973-b88d-0d5ebdb1f42f\/field_step_image"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/2189fecb-4a8f-4973-b88d-0d5ebdb1f42f\/relationships\/field_step_image"
+            }
+          }
+        },
+        "field_step_jump": {
+          "data": {
+            "type": "taxonomy_term--aj1",
+            "id": "84abbfad-8caa-4833-a47b-75cc5a73b5cd"
+          },
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/2189fecb-4a8f-4973-b88d-0d5ebdb1f42f\/field_step_jump"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/2189fecb-4a8f-4973-b88d-0d5ebdb1f42f\/relationships\/field_step_jump"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "taxonomy_term--aj1",
+      "id": "783a1292-9120-40c9-b075-2b38cda54fda",
+      "links": {
+        "self": {
+          "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/783a1292-9120-40c9-b075-2b38cda54fda"
+        }
+      },
+      "attributes": {
+        "drupal_internal__tid": 59,
+        "drupal_internal__revision_id": 59,
+        "langcode": "en",
+        "revision_created": "2020-09-25T00:29:42+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "Fever",
+        "description": null,
+        "weight": 1,
+        "changed": "2020-09-25T00:30:17+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "metatag": null,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        },
+        "field_step_body": {
+          "value": "\u003Cp\u003EMore to come...\u003C\/p\u003E\r\n",
+          "format": "rich_text",
+          "processed": "\u003Cp\u003EMore to come...\u003C\/p\u003E"
+        },
+        "field_step_option_name": "Fever",
+        "field_step_redirect": null,
+        "field_step_summary": null,
+        "field_step_trigger": []
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy_vocabulary--taxonomy_vocabulary",
+            "id": "d1e7d4ce-2b3b-4d45-9f48-cd6f8abbcde9"
+          },
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/783a1292-9120-40c9-b075-2b38cda54fda\/vid"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/783a1292-9120-40c9-b075-2b38cda54fda\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/783a1292-9120-40c9-b075-2b38cda54fda\/revision_user"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/783a1292-9120-40c9-b075-2b38cda54fda\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy_term--aj1",
+              "id": "84abbfad-8caa-4833-a47b-75cc5a73b5cd"
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/783a1292-9120-40c9-b075-2b38cda54fda\/parent"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/783a1292-9120-40c9-b075-2b38cda54fda\/relationships\/parent"
+            }
+          }
+        },
+        "field_step_attributes": {
+          "data": [],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/783a1292-9120-40c9-b075-2b38cda54fda\/field_step_attributes"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/783a1292-9120-40c9-b075-2b38cda54fda\/relationships\/field_step_attributes"
+            }
+          }
+        },
+        "field_step_image": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/783a1292-9120-40c9-b075-2b38cda54fda\/field_step_image"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/783a1292-9120-40c9-b075-2b38cda54fda\/relationships\/field_step_image"
+            }
+          }
+        },
+        "field_step_jump": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/783a1292-9120-40c9-b075-2b38cda54fda\/field_step_jump"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/783a1292-9120-40c9-b075-2b38cda54fda\/relationships\/field_step_jump"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "taxonomy_term--aj1",
+      "id": "5531cf46-669b-4f01-b370-2d6a8084cf39",
+      "links": {
+        "self": {
+          "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/5531cf46-669b-4f01-b370-2d6a8084cf39"
+        }
+      },
+      "attributes": {
+        "drupal_internal__tid": 60,
+        "drupal_internal__revision_id": 60,
+        "langcode": "en",
+        "revision_created": "2020-09-25T00:30:03+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "Sneezing",
+        "description": null,
+        "weight": 1,
+        "changed": "2020-09-25T00:30:17+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "metatag": null,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        },
+        "field_step_body": {
+          "value": "\u003Cp\u003EMore to come...\u003C\/p\u003E\r\n",
+          "format": "rich_text",
+          "processed": "\u003Cp\u003EMore to come...\u003C\/p\u003E"
+        },
+        "field_step_option_name": "Sneezing",
+        "field_step_redirect": null,
+        "field_step_summary": null,
+        "field_step_trigger": []
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy_vocabulary--taxonomy_vocabulary",
+            "id": "d1e7d4ce-2b3b-4d45-9f48-cd6f8abbcde9"
+          },
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/5531cf46-669b-4f01-b370-2d6a8084cf39\/vid"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/5531cf46-669b-4f01-b370-2d6a8084cf39\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/5531cf46-669b-4f01-b370-2d6a8084cf39\/revision_user"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/5531cf46-669b-4f01-b370-2d6a8084cf39\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy_term--aj1",
+              "id": "7b73b0f8-2125-4887-af0b-fbad5b2d8838"
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/5531cf46-669b-4f01-b370-2d6a8084cf39\/parent"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/5531cf46-669b-4f01-b370-2d6a8084cf39\/relationships\/parent"
+            }
+          }
+        },
+        "field_step_attributes": {
+          "data": [],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/5531cf46-669b-4f01-b370-2d6a8084cf39\/field_step_attributes"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/5531cf46-669b-4f01-b370-2d6a8084cf39\/relationships\/field_step_attributes"
+            }
+          }
+        },
+        "field_step_image": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/5531cf46-669b-4f01-b370-2d6a8084cf39\/field_step_image"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/5531cf46-669b-4f01-b370-2d6a8084cf39\/relationships\/field_step_image"
+            }
+          }
+        },
+        "field_step_jump": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/5531cf46-669b-4f01-b370-2d6a8084cf39\/field_step_jump"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/5531cf46-669b-4f01-b370-2d6a8084cf39\/relationships\/field_step_jump"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "taxonomy_term--aj1",
+      "id": "c7abb9a0-dc8a-4f38-962e-d97b984a7ce5",
+      "links": {
+        "self": {
+          "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/c7abb9a0-dc8a-4f38-962e-d97b984a7ce5"
+        }
+      },
+      "attributes": {
+        "drupal_internal__tid": 50,
+        "drupal_internal__revision_id": 50,
+        "langcode": "en",
+        "revision_created": "2020-09-25T00:15:08+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "Yes, I\u0027m a bit unwell",
+        "description": null,
+        "weight": 1,
+        "changed": "2020-09-25T00:23:57+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "metatag": null,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        },
+        "field_step_body": {
+          "value": "\u003Cp\u003EHow old are you?\u003C\/p\u003E\r\n",
+          "format": "rich_text",
+          "processed": "\u003Cp\u003EHow old are you?\u003C\/p\u003E"
+        },
+        "field_step_option_name": "Yes, I\u0027m a bit unwell",
+        "field_step_redirect": null,
+        "field_step_summary": null,
+        "field_step_trigger": []
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy_vocabulary--taxonomy_vocabulary",
+            "id": "d1e7d4ce-2b3b-4d45-9f48-cd6f8abbcde9"
+          },
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/c7abb9a0-dc8a-4f38-962e-d97b984a7ce5\/vid"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/c7abb9a0-dc8a-4f38-962e-d97b984a7ce5\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/c7abb9a0-dc8a-4f38-962e-d97b984a7ce5\/revision_user"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/c7abb9a0-dc8a-4f38-962e-d97b984a7ce5\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy_term--aj1",
+              "id": "8eee9280-e875-46b9-ba19-b1a548a22771"
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/c7abb9a0-dc8a-4f38-962e-d97b984a7ce5\/parent"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/c7abb9a0-dc8a-4f38-962e-d97b984a7ce5\/relationships\/parent"
+            }
+          }
+        },
+        "field_step_attributes": {
+          "data": [],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/c7abb9a0-dc8a-4f38-962e-d97b984a7ce5\/field_step_attributes"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/c7abb9a0-dc8a-4f38-962e-d97b984a7ce5\/relationships\/field_step_attributes"
+            }
+          }
+        },
+        "field_step_image": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/c7abb9a0-dc8a-4f38-962e-d97b984a7ce5\/field_step_image"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/c7abb9a0-dc8a-4f38-962e-d97b984a7ce5\/relationships\/field_step_image"
+            }
+          }
+        },
+        "field_step_jump": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/c7abb9a0-dc8a-4f38-962e-d97b984a7ce5\/field_step_jump"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/c7abb9a0-dc8a-4f38-962e-d97b984a7ce5\/relationships\/field_step_jump"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "taxonomy_term--aj1",
+      "id": "af6713d0-64b2-46a7-8d10-6b85dee74fcc",
+      "links": {
+        "self": {
+          "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/af6713d0-64b2-46a7-8d10-6b85dee74fcc"
+        }
+      },
+      "attributes": {
+        "drupal_internal__tid": 58,
+        "drupal_internal__revision_id": 58,
+        "langcode": "en",
+        "revision_created": "2020-09-25T00:25:51+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "51-80 years old",
+        "description": null,
+        "weight": 2,
+        "changed": "2020-09-25T00:26:07+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "metatag": null,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        },
+        "field_step_body": null,
+        "field_step_option_name": "51-80 years old",
+        "field_step_redirect": null,
+        "field_step_summary": null,
+        "field_step_trigger": []
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy_vocabulary--taxonomy_vocabulary",
+            "id": "d1e7d4ce-2b3b-4d45-9f48-cd6f8abbcde9"
+          },
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/af6713d0-64b2-46a7-8d10-6b85dee74fcc\/vid"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/af6713d0-64b2-46a7-8d10-6b85dee74fcc\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/af6713d0-64b2-46a7-8d10-6b85dee74fcc\/revision_user"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/af6713d0-64b2-46a7-8d10-6b85dee74fcc\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy_term--aj1",
+              "id": "c7abb9a0-dc8a-4f38-962e-d97b984a7ce5"
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/af6713d0-64b2-46a7-8d10-6b85dee74fcc\/parent"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/af6713d0-64b2-46a7-8d10-6b85dee74fcc\/relationships\/parent"
+            }
+          }
+        },
+        "field_step_attributes": {
+          "data": [],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/af6713d0-64b2-46a7-8d10-6b85dee74fcc\/field_step_attributes"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/af6713d0-64b2-46a7-8d10-6b85dee74fcc\/relationships\/field_step_attributes"
+            }
+          }
+        },
+        "field_step_image": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/af6713d0-64b2-46a7-8d10-6b85dee74fcc\/field_step_image"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/af6713d0-64b2-46a7-8d10-6b85dee74fcc\/relationships\/field_step_image"
+            }
+          }
+        },
+        "field_step_jump": {
+          "data": {
+            "type": "taxonomy_term--aj1",
+            "id": "84abbfad-8caa-4833-a47b-75cc5a73b5cd"
+          },
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/af6713d0-64b2-46a7-8d10-6b85dee74fcc\/field_step_jump"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/af6713d0-64b2-46a7-8d10-6b85dee74fcc\/relationships\/field_step_jump"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "taxonomy_term--aj1",
+      "id": "412cdb74-febb-4e3c-9b6a-151154d26e56",
+      "links": {
+        "self": {
+          "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/412cdb74-febb-4e3c-9b6a-151154d26e56"
+        }
+      },
+      "attributes": {
+        "drupal_internal__tid": 54,
+        "drupal_internal__revision_id": 54,
+        "langcode": "en",
+        "revision_created": "2020-09-25T00:19:11+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "I\u0027m feeling really sick",
+        "description": null,
+        "weight": 2,
+        "changed": "2020-09-25T00:20:32+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "metatag": null,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        },
+        "field_step_body": null,
+        "field_step_option_name": "I\u0027m feeling really sick",
+        "field_step_redirect": null,
+        "field_step_summary": null,
+        "field_step_trigger": []
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy_vocabulary--taxonomy_vocabulary",
+            "id": "d1e7d4ce-2b3b-4d45-9f48-cd6f8abbcde9"
+          },
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/412cdb74-febb-4e3c-9b6a-151154d26e56\/vid"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/412cdb74-febb-4e3c-9b6a-151154d26e56\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/412cdb74-febb-4e3c-9b6a-151154d26e56\/revision_user"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/412cdb74-febb-4e3c-9b6a-151154d26e56\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy_term--aj1",
+              "id": "8eee9280-e875-46b9-ba19-b1a548a22771"
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/412cdb74-febb-4e3c-9b6a-151154d26e56\/parent"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/412cdb74-febb-4e3c-9b6a-151154d26e56\/relationships\/parent"
+            }
+          }
+        },
+        "field_step_attributes": {
+          "data": [],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/412cdb74-febb-4e3c-9b6a-151154d26e56\/field_step_attributes"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/412cdb74-febb-4e3c-9b6a-151154d26e56\/relationships\/field_step_attributes"
+            }
+          }
+        },
+        "field_step_image": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/412cdb74-febb-4e3c-9b6a-151154d26e56\/field_step_image"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/412cdb74-febb-4e3c-9b6a-151154d26e56\/relationships\/field_step_image"
+            }
+          }
+        },
+        "field_step_jump": {
+          "data": {
+            "type": "taxonomy_term--aj1",
+            "id": "9cf25e54-9d0e-4bd9-8307-c74b3b8e6128"
+          },
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/412cdb74-febb-4e3c-9b6a-151154d26e56\/field_step_jump"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/412cdb74-febb-4e3c-9b6a-151154d26e56\/relationships\/field_step_jump"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "taxonomy_term--aj1",
+      "id": "8eee9280-e875-46b9-ba19-b1a548a22771",
+      "links": {
+        "self": {
+          "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/8eee9280-e875-46b9-ba19-b1a548a22771"
+        }
+      },
+      "attributes": {
+        "drupal_internal__tid": 48,
+        "drupal_internal__revision_id": 48,
+        "langcode": "en",
+        "revision_created": "2020-09-25T00:12:59+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "Start of health journey",
+        "description": null,
+        "weight": 10,
+        "changed": "2020-09-25T00:30:17+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "metatag": null,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        },
+        "field_step_body": {
+          "value": "\u003Cp\u003EAre you feeling unwell?\u003C\/p\u003E\r\n",
+          "format": "rich_text",
+          "processed": "\u003Cp\u003EAre you feeling unwell?\u003C\/p\u003E"
+        },
+        "field_step_option_name": "Start of health journey",
+        "field_step_redirect": null,
+        "field_step_summary": null,
+        "field_step_trigger": [],
+        "field_step_template": "button"
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy_vocabulary--taxonomy_vocabulary",
+            "id": "d1e7d4ce-2b3b-4d45-9f48-cd6f8abbcde9"
+          },
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/8eee9280-e875-46b9-ba19-b1a548a22771\/vid"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/8eee9280-e875-46b9-ba19-b1a548a22771\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/8eee9280-e875-46b9-ba19-b1a548a22771\/revision_user"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/8eee9280-e875-46b9-ba19-b1a548a22771\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy_term--aj1",
+              "id": "virtual",
+              "meta": {
+                "links": {
+                  "help": {
+                    "href": "https:\/\/www.drupal.org\/docs\/8\/modules\/json-api\/core-concepts#virtual",
+                    "meta": {
+                      "about": "Usage and meaning of the \u0027virtual\u0027 resource identifier."
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/8eee9280-e875-46b9-ba19-b1a548a22771\/parent"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/8eee9280-e875-46b9-ba19-b1a548a22771\/relationships\/parent"
+            }
+          }
+        },
+        "field_step_attributes": {
+          "data": [],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/8eee9280-e875-46b9-ba19-b1a548a22771\/field_step_attributes"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/8eee9280-e875-46b9-ba19-b1a548a22771\/relationships\/field_step_attributes"
+            }
+          }
+        },
+        "field_step_image": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/8eee9280-e875-46b9-ba19-b1a548a22771\/field_step_image"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/8eee9280-e875-46b9-ba19-b1a548a22771\/relationships\/field_step_image"
+            }
+          }
+        },
+        "field_step_jump": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/8eee9280-e875-46b9-ba19-b1a548a22771\/field_step_jump"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/8eee9280-e875-46b9-ba19-b1a548a22771\/relationships\/field_step_jump"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "taxonomy_term--aj1",
+      "id": "84abbfad-8caa-4833-a47b-75cc5a73b5cd",
+      "links": {
+        "self": {
+          "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/84abbfad-8caa-4833-a47b-75cc5a73b5cd"
+        }
+      },
+      "attributes": {
+        "drupal_internal__tid": 56,
+        "drupal_internal__revision_id": 56,
+        "langcode": "en",
+        "revision_created": "2020-09-25T00:24:40+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "Describe your symptoms",
+        "description": null,
+        "weight": 11,
+        "changed": "2020-09-25T00:30:17+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "metatag": null,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        },
+        "field_step_body": {
+          "value": "\u003Cp\u003EDescribe your symptoms\u003C\/p\u003E\r\n",
+          "format": "rich_text",
+          "processed": "\u003Cp\u003EDescribe your symptoms\u003C\/p\u003E"
+        },
+        "field_step_option_name": "Describe your symptoms",
+        "field_step_redirect": null,
+        "field_step_summary": null,
+        "field_step_trigger": []
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy_vocabulary--taxonomy_vocabulary",
+            "id": "d1e7d4ce-2b3b-4d45-9f48-cd6f8abbcde9"
+          },
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/84abbfad-8caa-4833-a47b-75cc5a73b5cd\/vid"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/84abbfad-8caa-4833-a47b-75cc5a73b5cd\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/84abbfad-8caa-4833-a47b-75cc5a73b5cd\/revision_user"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/84abbfad-8caa-4833-a47b-75cc5a73b5cd\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy_term--aj1",
+              "id": "virtual",
+              "meta": {
+                "links": {
+                  "help": {
+                    "href": "https:\/\/www.drupal.org\/docs\/8\/modules\/json-api\/core-concepts#virtual",
+                    "meta": {
+                      "about": "Usage and meaning of the \u0027virtual\u0027 resource identifier."
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/84abbfad-8caa-4833-a47b-75cc5a73b5cd\/parent"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/84abbfad-8caa-4833-a47b-75cc5a73b5cd\/relationships\/parent"
+            }
+          }
+        },
+        "field_step_attributes": {
+          "data": [],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/84abbfad-8caa-4833-a47b-75cc5a73b5cd\/field_step_attributes"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/84abbfad-8caa-4833-a47b-75cc5a73b5cd\/relationships\/field_step_attributes"
+            }
+          }
+        },
+        "field_step_image": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/84abbfad-8caa-4833-a47b-75cc5a73b5cd\/field_step_image"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/84abbfad-8caa-4833-a47b-75cc5a73b5cd\/relationships\/field_step_image"
+            }
+          }
+        },
+        "field_step_jump": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/84abbfad-8caa-4833-a47b-75cc5a73b5cd\/field_step_jump"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/84abbfad-8caa-4833-a47b-75cc5a73b5cd\/relationships\/field_step_jump"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "taxonomy_term--aj1",
+      "id": "9cf25e54-9d0e-4bd9-8307-c74b3b8e6128",
+      "links": {
+        "self": {
+          "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/9cf25e54-9d0e-4bd9-8307-c74b3b8e6128"
+        }
+      },
+      "attributes": {
+        "drupal_internal__tid": 51,
+        "drupal_internal__revision_id": 51,
+        "langcode": "en",
+        "revision_created": "2020-09-25T00:16:53+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "Call 911",
+        "description": null,
+        "weight": 12,
+        "changed": "2020-09-25T00:30:17+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "metatag": null,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        },
+        "field_step_body": {
+          "value": "\u003Cp\u003ECall 911 immediately.\u0026nbsp;\u003C\/p\u003E\r\n\r\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\r\n\r\n\u003Cp\u003E\u003Ca class=\u0022btn button btn-primary button-primary primary\u0022 href=\u0022tel:911\u0022\u003ECall 911 now\u003C\/a\u003E\u003C\/p\u003E\r\n\r\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\r\n\r\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\r\n",
+          "format": "rich_text",
+          "processed": "\u003Cp\u003ECall 911 immediately.\u00a0\u003C\/p\u003E\n\n\u003Cp\u003E\u00a0\u003C\/p\u003E\n\n\u003Cp\u003E\u003Ca class=\u0022btn button btn-primary button-primary primary\u0022 href=\u0022tel:911\u0022\u003ECall 911 now\u003C\/a\u003E\u003C\/p\u003E\n\n\u003Cp\u003E\u00a0\u003C\/p\u003E\n\n\u003Cp\u003E\u00a0\u003C\/p\u003E"
+        },
+        "field_step_option_name": "Urgent",
+        "field_step_redirect": null,
+        "field_step_summary": null,
+        "field_step_trigger": []
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy_vocabulary--taxonomy_vocabulary",
+            "id": "d1e7d4ce-2b3b-4d45-9f48-cd6f8abbcde9"
+          },
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/9cf25e54-9d0e-4bd9-8307-c74b3b8e6128\/vid"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/9cf25e54-9d0e-4bd9-8307-c74b3b8e6128\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/9cf25e54-9d0e-4bd9-8307-c74b3b8e6128\/revision_user"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/9cf25e54-9d0e-4bd9-8307-c74b3b8e6128\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy_term--aj1",
+              "id": "virtual",
+              "meta": {
+                "links": {
+                  "help": {
+                    "href": "https:\/\/www.drupal.org\/docs\/8\/modules\/json-api\/core-concepts#virtual",
+                    "meta": {
+                      "about": "Usage and meaning of the \u0027virtual\u0027 resource identifier."
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/9cf25e54-9d0e-4bd9-8307-c74b3b8e6128\/parent"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/9cf25e54-9d0e-4bd9-8307-c74b3b8e6128\/relationships\/parent"
+            }
+          }
+        },
+        "field_step_attributes": {
+          "data": [],
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/9cf25e54-9d0e-4bd9-8307-c74b3b8e6128\/field_step_attributes"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/9cf25e54-9d0e-4bd9-8307-c74b3b8e6128\/relationships\/field_step_attributes"
+            }
+          }
+        },
+        "field_step_image": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/9cf25e54-9d0e-4bd9-8307-c74b3b8e6128\/field_step_image"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/9cf25e54-9d0e-4bd9-8307-c74b3b8e6128\/relationships\/field_step_image"
+            }
+          }
+        },
+        "field_step_jump": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/9cf25e54-9d0e-4bd9-8307-c74b3b8e6128\/field_step_jump"
+            },
+            "self": {
+              "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1\/9cf25e54-9d0e-4bd9-8307-c74b3b8e6128\/relationships\/field_step_jump"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "links": {
+    "self": {
+      "href": "http:\/\/convivial.localhost\/jsonapi\/taxonomy_term\/aj1?include=field_step_attributes%2Cfield_step_image\u0026sort=weight"
+    }
+  }
+}
